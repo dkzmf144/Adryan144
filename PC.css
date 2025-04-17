@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background: #007acc;
+  background: #a6acb0;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -46,7 +46,7 @@ section {
 footer {
   text-align: center;
   padding: 10px 0;
-  background: #007acc;
+  background: #7c7e7f;
   color: #fff;
   position: relative;
   bottom: 0;
@@ -84,5 +84,5 @@ footer {
   color: #333;
 }
 #menu a:hover {
-  background-color: #ddd;
+  background-color: #9e1616;
 }
