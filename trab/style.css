@@ -236,3 +236,23 @@ body {
   height: 100%;
 }
 
+<<<<<<< HEAD:trab/style.css
+=======
+
+/*mudar de imagem*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#imagem {
+  width: 400px;
+  height: 300px;
+  transition: opacity 1s ease-in-out;
+}
+>>>>>>> 227329e2718d4eb40d50bd3189a197ca6b7f00a0:style.css
