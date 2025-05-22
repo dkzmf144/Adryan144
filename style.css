@@ -3,13 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #242638;
-  color: #30b55e;
+  background-color: #2a2a2a; /* fundo cinza escuro */
+  color: #d1d1d1; /* texto cinza claro */
 }
 
-/* Cabeçalho */
+/* Header */
 header {
-  background-color: #424242;
+  background-color: #333333; /* cinza escuro */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -17,10 +17,9 @@ header {
 }
 
 header h1 {
-  color: #1ff36dc2;
+  color: #e1e1e1; /* cor clara para título */
 }
 
-/* Menu de navegação */
 nav ul {
   list-style: none;
   padding: 0;
@@ -32,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #30b55e;
+  color: #d1d1d1; /* cor cinza claro */
   text-decoration: none;
 }
 
@@ -40,12 +39,12 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Menu dropdown (mobile ou botão) */
+/* Menu lateral */
 #menu {
   display: none;
-  border: 1px solid #be1f1f;
+  border: 1px solid #888; /* borda cinza */
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: #2a2a2a; /* fundo cinza escuro */
   position: absolute;
   z-index: 1000;
 }
@@ -54,14 +53,14 @@ nav ul li a:hover {
   display: block;
   padding: 8px;
   text-decoration: none;
-  color: #cd0f0f;
+  color: #aaa; /* cor cinza médio */
 }
 
 #menu a:hover {
-  background-color: #9e1616;
+  background-color: #444444; /* fundo cinza escuro */
 }
 
-/* Conteúdo principal */
+/* Main */
 main {
   padding: 20px;
 }
@@ -70,7 +69,7 @@ main {
 section {
   margin: 20px 0;
   padding: 20px;
-  background: #070c40;
+  background: #1f1f1f; /* fundo cinza bem escuro */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -89,97 +88,150 @@ form input,
 form textarea {
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #444; /* borda escura */
+  background-color: #333; /* fundo input */
+  color: #ddd; /* texto claro */
 }
 
-/* Frases informativas */
+/* Links e botões */
+a {
+  color: #d1d1d1; /* cor cinza claro */
+}
+
+a:hover {
+  color: #b0b0b0; /* cor cinza médio */
+}
+
+/* Dicas e Peças */
 .frase {
   font-size: 15px;
   transition: color 0.3s;
 }
 
 .frase:hover {
-  color: rgb(99, 18, 175);
+  color: #888; /* cor de destaque em cinza */
 }
 
 h2 {
-  color: rgb(28, 202, 202);
+  color: #e1e1e1; /* cor clara para títulos */
 }
 
-/* Links gerais */
-a {
-  color: #30b55e;
-}
-
-/* Seção de peças recomendadas */
-#pecas ul {
-  list-style: none;
-  padding: 0;
-}
-
-#pecas ul li {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #070c40;
-  border-radius: 5px;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#pecas ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#pecas ul li a {
-  color: #30b55e;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  transition: color 0.3s ease;
-}
-
-#pecas ul li a:hover {
-  color: rgb(9, 255, 9);
-}
-
-/* Seção de dicas */
+#pecas ul,
 #dicas ul {
   list-style: none;
   padding: 0;
 }
 
+#pecas ul li,
 #dicas ul li {
   margin: 10px 0;
   padding: 10px;
-  background-color: #070c40;
+  background-color: #1f1f1f; /* fundo cinza bem escuro */
   border-radius: 5px;
-  color: #fff;
+  color: #d1d1d1; /* texto cinza claro */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#pecas ul li:hover,
 #dicas ul li:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#pecas ul li a,
 #dicas ul li a {
-  color: #30b55e;
+  color: #d1d1d1; /* cor cinza claro */
   text-decoration: none;
   font-weight: bold;
   display: block;
   transition: color 0.3s ease;
 }
 
+#pecas ul li a:hover,
 #dicas ul li a:hover {
-  color: rgb(9, 255, 9);
+  color: #b0b0b0; /* cor cinza médio */
 }
 
-/* Rodapé (caso queira usar) */
+/* Footer */
 footer {
   text-align: center;
   padding: 10px 0;
-  background: #2184b6;
-  color: #fff;
+  background: #333333; /* cinza escuro */
+  color: #d1d1d1; /* texto claro */
   width: 100%;
+}
+
+/* Seção de Venda de PCs */
+#venda {
+  background-color: #2a2a2a; /* fundo cinza escuro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#venda h2 {
+  color: #d1d1d1; /* texto claro */
+}
+
+.pc-item {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #3c3c3c; /* fundo cinza médio */
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pc-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.pc-item h3 {
+  color: #e1e1e1; /* título claro */
+  margin-top: 10px;
+}
+
+.pc-item p {
+  color: #d1d1d1; /* texto claro */
+}
+
+.pc-item .preco {
+  font-size: 1.2em;
+  color: #e54b4b; /* cor do preço vermelha */
+  margin: 10px 0;
+}
+
+.pc-item button {
+  background-color: #555; /* fundo cinza médio */
+  color: #d1d1d1; /* texto claro */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.pc-item button:hover {
+  background-color: #777; /* fundo cinza mais claro */
+}
+
+.pc-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset de * */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
