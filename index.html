@@ -1,31 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PC</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-        /* Estilos do menu */
-        #menu {
-            display: none; /* Esconde o menu inicialmente */
-            border: 1px solid #ce2c2c;
-            padding: 10px;
-            background-color: #f9f9f9;
-            position: absolute;
-            z-index: 1000; /* Para garantir que o menu fique acima de outros elementos */
-        }
-        #menu a {
-            display: block;
-            padding: 8px;
-            text-decoration: none;
-            color: #333;
-        }
-        #menu a:hover {
-            background-color: #6e5b5b;
-        }
-    </style>
 </head>
+
 <body>
     <header>
         <h1>PCs-gods</h1>
@@ -33,6 +15,7 @@
             <ul>
                 <li><a href="#montagem">Montagem de PCs</a></li>
                 <li><a href="#pecas">Peças Recomendadas</a></li>
+                <li><a href="#venda">Venda de PCs</a></li>
                 <li><a href="#dicas">Dicas</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -40,87 +23,114 @@
     </header>
 
     <main>
-        <div>
-            
-<div class="montagem">
-    <a href="oredirecionalproxpagina" target="_blank">
-        
-                <img src="C:\Users\AdryanGabrielRodrigu\Desktop\tcc.pc\imagens\tela pc.jpg" alt="pcgamer" width="1230" height="400">
-                  <h2>Montagem de PCs</h2>
-                  <p>
-                      Aprenda a montar seu próprio PC com nossas dicas e guias passo a
-                      passo.
-                  </p>
-
-        </div>
-        
-            <p>
-            <p class="frase">Mais informações sobre montagem !</p>
-            </p>
+        <!-- Seção de Montagem -->
+        <section class="montagem" id="montagem">
+            <a href="oredirecionalproxpagina" target="_blank">
+                <img src="imagem/pc.jfif" alt="pcgamer" width="1230"
+                    height="400">
+                <h2>Montagem de PCs</h2>
+                <p>Aprenda a montar seu próprio PC com nossas dicas e guias passo a passo.</p>
+            </a>
+            <p class="frase">Mais informações sobre montagem!</p>
             <div id="menu">
                 <a href="#dicas">Dicas de Montagem</a>
                 <a href="#pecas">Componentes Recomendados</a>
-                
             </div>
         </section>
 
-<section id="pecas">
-  <h2>Peças Recomendadas</h2>
-  <ul>
-    <li><a href="https://www.amazon.com.br/PLACA-GIGABYTE-B550M-AORUS-ELITE/dp/B08BN8VD23/ref=asc_df_B08BN8VD23?mcid=a0c1ed3044c8333d98fe2652051560df&tag=googleshopp00-20&linkCode=df0&hvadid=709884378199&hvpos=&hvnetw=g&hvrand=4749078655932017817&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9074235&hvtargid=pla-944675107569&psc=1&language=pt_BR&gad_source=1" target="_blank">Placa-Mãe ASUS ROG Strix B550-F</a></li>
-    <li><a href="https://www.amazon.com.br/Processador-AMD-Ryzen-5600X-Threads/dp/B08166SLDF/ref=asc_df_B08166SLDF?mcid=4409ab0d78b832a793d956c9f3604fb4&tag=googleshopp00-20&linkCode=df0&hvadid=709884378223&hvpos=&hvnetw=g&hvrand=3192231742974485811&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9074235&hvtargid=pla-1038719530487&psc=1&language=pt_BR&gad_source=1" target="_blank">Processador AMD Ryzen 5 5600X</a></li>
-    <li><a href="https://www.kabum.com.br/produto/583182/memoria-ram-corsair-vengeance-lpx-16gb-3200mhz-ddr4-cl16-preto-cmk16gx4m1e3200c16?utm_id=22429436051&gad_source=1&gad_campaignid=22429436051&gbraid=0AAAAADx-HyHN9jf9AZHmjRdz-jKMDkz9H&gclid=Cj0KCQjwoZbBBhDCARIsAOqMEZVLZnyqL7qrfgpxnxEb60eJ3CMKEZsVAqVm2FDdgG0wTRBH3EbOMnsaAn2PEALw_wcB" target="_blank">Memória RAM Corsair Vengeance LPX 16GB</a></li>
-    <li><a href="https://www.mercadolivre.com.br/placa-de-video-galax-nvidia-ex-rtx-3050-6gb-gddr6-96-bits/p/MLB45905113?pdp_filters=item_id%3AMLB4056326219&from=gshop&matt_tool=61921241&matt_internal_campaign_id=&matt_word=&matt_source=google&matt_campaign_id=22090354535&matt_ad_group_id=173090629596&matt_match_type=&matt_network=g&matt_device=c&matt_creative=727882734627&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735128188&matt_product_id=MLB45905113-product&matt_product_partition_id=2392713579101&matt_target_id=pla-2392713579101&cq_src=google_ads&cq_cmp=22090354535&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22090354535&gbraid=0AAAAAD93qcCiITULCxQQmtKK2xAhutCsg&gclid=Cj0KCQjwoZbBBhDCARIsAOqMEZU6k9YUIl2IC9iDd0g_bNISuPanSQWJHOelj4duvtFCHbKCgAB6GEoaAk_HEALw_wcB" target="_blank">Placa de Vídeo Galax NVIDIA GeForce RTX 3050 EX 6GB</a></li>
-    <li><a href="https://www.amazon.com.br/SSD-Samsung-MZ-V7S1T0B-AM-Plus/dp/B07MFZY2F2/ref=asc_df_B07MFZY2F2?mcid=b53185824e1439dba461f39cba72f858&tag=googleshopp00-20&linkCode=df0&hvadid=709884747547&hvpos=&hvnetw=g&hvrand=9785775533711395836&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9074235&hvtargid=pla-638196418225&language=pt_BR&gad_source=1&th=1" target="_blank">Armazenamento: Samsung 970 EVO 1TB SSD</a></li>
-    <li><a href="https://www.amazon.com.br/Fonte-Gamer-GS600-White-GAMEMAX/dp/B07V3S6CTN/ref=asc_df_B07V3S6CTN?mcid=4cbc7ff3ba323317a8f86601114ce9fa&tag=googleshopp00-20&linkCode=df0&hvadid=709884378157&hvpos=&hvnetw=g&hvrand=8639926045082263726&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9074235&hvtargid=pla-1721681815668&psc=1&language=pt_BR&gad_source=1" target="_blank">Fonte Gamemax Gs600 600w 80 Plus</a></li>
-  </ul>
-</section>
+        <!-- Seção de Venda de PCs -->
+        <section id="venda">
+ <h2>Venda de PCs</h2>
+ <div class="pc-item">
+    <img src="imagem/pc2.jfif" alt="PC Gamer 4" width="250" height="200">
+    <h4>PC Gamer Ultra</h4>
+    <p>Design sofisticado e moderno. Equipado com processador Intel i7 / AMD Ryzen 7, placa de vídeo RTX 3060 / RX 6600 XT, e 16GB de RAM</p>
+    <p class="preco">R$ 5.990</p>
+    <button>Comprar</button>
+</div>
+            <div class="pc-item">
+                <img src="imagem/pc4.jfif" alt="PC Gamer 1" width="250" height="200">
+                <h3>PC Gamer Ultra</h3>
+                <p> O PC Ultra Vermelho combina alto desempenho com um design impressionante, placa de vídeo potente e 32GB de RAM</p>
+                <p class="preco">R$ 9.999,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="pc-item">
+                <img src="imagem/pc3.jfif" alt="PC Gamer 2" width="250" height="200">
+                <h3>PC Gamer Pro</h3>
+                <p>Excelente para jogos e edição de vídeos. Processador AMD Ryzen 7, 32GB RAM, SSD 1TB e placa de vídeo GTX 1660 Ti.</p>
+                <p class="preco">R$ 6.499,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="pc-item">
+                <img src="imagem/pc3.jfif" alt="PC Gamer 3" width="250" height="200">
+                <h3>PC Gamer Lite</h3>
+                <p>Perfeito para quem busca custo-benefício. Processador Intel i5, 8GB RAM, SSD 512GB e placa de vídeo GTX 1650.</p>
+                <p class="preco">R$ 3.499,00</p>
+                <button>Comprar</button>
+            </div>
+        </section>
 
-
-        <section id="dicas">
-            <h2>Dicas</h2>
-            <p>Confira nossas dicas para otimizar o desempenho do seu PC:</p>
-            
-                <ul>
-    <li><a href="https://www.youtube.com/watch?v=1ltoPMRSDX0="target=" _blank">Mantenha os drivers atualizados </a></li>
-    <li><a href="https://www.youtube.com/watch?v=Hb_8npj0G_o="target=" _blank"> Limpe regularmente o interior do gabinete</a></li>
-    <li><a href="https://www.youtube.com/watch?v=15ahGwXHiks="target=" _blank">Use um software de monitoramento de temperatura.</a></li>
-    <li><a href="https://www.youtube.com/watch?v=OaeZt5YLxB4="target=" _blank">Otimize as configurações de energia.</a></li>
+       
+          
+        <section id="pecas">
+            <h2>Peças Recomendadas</h2>
+            <ul>
+                <li><a href="https://www.amazon.com.br/PLACA-GIGABYTE-B550M-AORUS-ELITE/dp/B08BN8VD23" target="_blank">Placa-Mãe ASUS ROG Strix B550-F</a></li>
+                <li><a href="https://www.amazon.com.br/Processador-AMD-Ryzen-5600X-Threads/dp/B08166SLDF" target="_blank">Processador AMD Ryzen 5 5600X</a></li>
+                <li><a href="https://www.amazon.com.br/Placa-Grafica-GIGABYTE-GeForce-GAMING/dp/B0825RMQ85" target="_blank">Placa de Vídeo GeForce RTX 3080</a></li>
+                <li><a href="https://www.amazon.com.br/Cooler-Master-MasterBox-Mid-Tower/dp/B07YV8L34H" target="_blank">Gabinete Cooler Master MasterBox</a></li>
+                <li><a href="https://www.amazon.com.br/Kingston-HyperX-64GB-3200MHz-Technology/dp/B08P5QHJ3X" target="_blank">Memória RAM Kingston HyperX Fury 64GB</a></li>
+                <li><a href="https://www.amazon.com.br/SSD-Samsung-970-EVO-1TB/dp/B07MFZ2QF2" target="_blank">SSD Samsung 970 EVO 1TB</a></li>
+                <li><a href="https://www.amazon.com.br/Fonte-Corsair-RM850x-Certificado-Modular/dp/B079FLZY5X" target="_blank">Fonte Corsair RM850x 850W</a></li>
             </ul>
         </section>
 
+        <!-- Seção de Dicas -->
+        <section id="dicas">
+            <h2>Dicas</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=1ltoPMRSDX0" target="_blank">Mantenha os drivers atualizados</a></li>
+                <li><a href="https://www.youtube.com/watch?v=GMtYcV6vhpE" target="_blank">Como escolher a melhor placa de vídeo</a></li>
+                <li><a href="https://www.youtube.com/watch?v=14O_dPfwQlg" target="_blank">Importância de um bom sistema de refrigeração</a></li>
+                <li><a href="https://www.youtube.com/watch?v=w8T7tgs2CKE" target="_blank">A importância de uma boa fonte de alimentação</a></li>
+            </ul>
+        </section>
+
+        <!-- Seção de Contato -->
         <section id="contato">
             <h2>Contato</h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" i d="nome" name="nome" required />
-
+                <input type="text" id="nome" name="nome" required />
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required />
-
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" required></textarea>
-
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 PC. Todos os direitos reservados.</p>
+        <p>&copy; 2023 PCs-gods. Todos os direitos reservados.</p>
     </footer>
 
     <script>
         const menuButton = document.getElementById('montagemMenuButton');
         const menu = document.getElementById('menu');
 
-        menuButton.addEventListener('click', () => {
-            // Alterna a visibilidade do menu
-            if (menu.style.display === 'none' || menu.style.display === '') {
-                menu.style.display = 'block';
-            } else {
-                menu.style.display = 'none';
-            }
-        });
+        if (menuButton) {
+            menuButton.addEventListener('click', () => {
+                if (menu.style.display === 'none' || menu.style.display === '') {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
 
-            
+
+</html>
