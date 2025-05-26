@@ -1,10 +1,23 @@
-/* Reset e base */
-body {
-  font-family: Arial, sans-serif;
+/* Reset geral */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
   background-color: #2a2a2a; /* fundo cinza escuro */
   color: #d1d1d1; /* texto cinza claro */
+}
+
+/* Layout padrão */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -17,7 +30,7 @@ header {
 }
 
 header h1 {
-  color: #e1e1e1; /* cor clara para título */
+  color: #e1e1e1;
 }
 
 nav ul {
@@ -31,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #d1d1d1; /* cor cinza claro */
+  color: #d1d1d1;
   text-decoration: none;
 }
 
@@ -42,9 +55,9 @@ nav ul li a:hover {
 /* Menu lateral */
 #menu {
   display: none;
-  border: 1px solid #888; /* borda cinza */
+  border: 1px solid #888;
   padding: 10px;
-  background-color: #2a2a2a; /* fundo cinza escuro */
+  background-color: #2a2a2a;
   position: absolute;
   z-index: 1000;
 }
@@ -53,23 +66,24 @@ nav ul li a:hover {
   display: block;
   padding: 8px;
   text-decoration: none;
-  color: #aaa; /* cor cinza médio */
+  color: #aaa;
 }
 
 #menu a:hover {
-  background-color: #444444; /* fundo cinza escuro */
+  background-color: #444444;
 }
 
 /* Main */
 main {
   padding: 20px;
+  flex: 1;
 }
 
 /* Seções */
 section {
   margin: 20px 0;
   padding: 20px;
-  background: #1f1f1f; /* fundo cinza bem escuro */
+  background: #1f1f1f;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -88,18 +102,18 @@ form input,
 form textarea {
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #444; /* borda escura */
-  background-color: #333; /* fundo input */
-  color: #ddd; /* texto claro */
+  border: 1px solid #444;
+  background-color: #333;
+  color: #ddd;
 }
 
 /* Links e botões */
 a {
-  color: #d1d1d1; /* cor cinza claro */
+  color: #d1d1d1;
 }
 
 a:hover {
-  color: #b0b0b0; /* cor cinza médio */
+  color: #b0b0b0;
 }
 
 /* Dicas e Peças */
@@ -109,11 +123,11 @@ a:hover {
 }
 
 .frase:hover {
-  color: #888; /* cor de destaque em cinza */
+  color: #888;
 }
 
 h2 {
-  color: #e1e1e1; /* cor clara para títulos */
+  color: #e1e1e1;
 }
 
 #pecas ul,
@@ -126,9 +140,9 @@ h2 {
 #dicas ul li {
   margin: 10px 0;
   padding: 10px;
-  background-color: #1f1f1f; /* fundo cinza bem escuro */
+  background-color: #1f1f1f;
   border-radius: 5px;
-  color: #d1d1d1; /* texto cinza claro */
+  color: #d1d1d1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -140,7 +154,7 @@ h2 {
 
 #pecas ul li a,
 #dicas ul li a {
-  color: #d1d1d1; /* cor cinza claro */
+  color: #d1d1d1;
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -149,28 +163,28 @@ h2 {
 
 #pecas ul li a:hover,
 #dicas ul li a:hover {
-  color: #b0b0b0; /* cor cinza médio */
+  color: #b0b0b0;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 10px 0;
-  background: #333333; /* cinza escuro */
-  color: #d1d1d1; /* texto claro */
+  background: #333333;
+  color: #d1d1d1;
   width: 100%;
 }
 
 /* Seção de Venda de PCs */
 #venda {
-  background-color: #2a2a2a; /* fundo cinza escuro */
+  background-color: #2a2a2a;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #venda h2 {
-  color: #d1d1d1; /* texto claro */
+  color: #d1d1d1;
 }
 
 .pc-item {
@@ -178,7 +192,7 @@ footer {
   width: 250px;
   margin: 20px;
   padding: 15px;
-  background-color: #3c3c3c; /* fundo cinza médio */
+  background-color: #3c3c3c;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -190,23 +204,23 @@ footer {
 }
 
 .pc-item h3 {
-  color: #e1e1e1; /* título claro */
+  color: #e1e1e1;
   margin-top: 10px;
 }
 
 .pc-item p {
-  color: #d1d1d1; /* texto claro */
+  color: #d1d1d1;
 }
 
 .pc-item .preco {
   font-size: 1.2em;
-  color: #e54b4b; /* cor do preço vermelha */
+  color: #e54b4b;
   margin: 10px 0;
 }
 
 .pc-item button {
-  background-color: #555; /* fundo cinza médio */
-  color: #d1d1d1; /* texto claro */
+  background-color: #555;
+  color: #d1d1d1;
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -216,7 +230,7 @@ footer {
 }
 
 .pc-item button:hover {
-  background-color: #777; /* fundo cinza mais claro */
+  background-color: #777;
 }
 
 .pc-item:hover {
@@ -224,34 +238,11 @@ footer {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset de * */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-
-
-
-/*mudar de imagem*/
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-}
-
+/* Seção de imagem com troca dinâmica */
 #imagem {
   width: 400px;
   height: 300px;
   transition: opacity 1s ease-in-out;
+  margin: auto;
+  display: block;
 }
