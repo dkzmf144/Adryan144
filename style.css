@@ -113,7 +113,7 @@ a {
 }
 
 a:hover {
-  color: #b0b0b0;
+  color: #494646;
 }
 
 /* Dicas e Peças */
@@ -163,7 +163,7 @@ h2 {
 
 #pecas ul li a:hover,
 #dicas ul li a:hover {
-  color: #bce5d581;
+  color: #5f626190;
 }
 
 /* Footer */
