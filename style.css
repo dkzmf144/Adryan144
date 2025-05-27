@@ -1,15 +1,28 @@
-/* Reset e base */
-body {
-  font-family: Arial, sans-serif;
+/* Reset geral */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #242638;
-  color: #30b55e;
 }
 
-/* Cabeçalho */
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #2a2a2a; /* fundo cinza escuro */
+  color: #d1d1d1; /* texto cinza claro */
+}
+
+/* Layout padrão */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
 header {
-  background-color: #424242;
+  background-color: #333333; /* cinza escuro */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -17,10 +30,9 @@ header {
 }
 
 header h1 {
-  color: #1ff36dc2;
+  color: #e1e1e1;
 }
 
-/* Menu de navegação */
 nav ul {
   list-style: none;
   padding: 0;
@@ -32,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #30b55e;
+  color: #d1d1d1;
   text-decoration: none;
 }
 
@@ -40,12 +52,12 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Menu dropdown (mobile ou botão) */
+/* Menu lateral */
 #menu {
   display: none;
-  border: 1px solid #be1f1f;
+  border: 1px solid #888;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: #2a2a2a;
   position: absolute;
   z-index: 1000;
 }
@@ -54,23 +66,24 @@ nav ul li a:hover {
   display: block;
   padding: 8px;
   text-decoration: none;
-  color: #cd0f0f;
+  color: #aaa;
 }
 
 #menu a:hover {
-  background-color: #9e1616;
+  background-color: #444444;
 }
 
-/* Conteúdo principal */
+/* Main */
 main {
   padding: 20px;
+  flex: 1;
 }
 
 /* Seções */
 section {
   margin: 20px 0;
   padding: 20px;
-  background: #070c40;
+  background: #1f1f1f;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -89,97 +102,154 @@ form input,
 form textarea {
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #ddd;
 }
 
-/* Frases informativas */
+/* Links e botões */
+a {
+  color: #d1d1d1;
+}
+
+a:hover {
+  color: #b0b0b0;
+}
+
+/* Dicas e Peças */
 .frase {
   font-size: 15px;
   transition: color 0.3s;
 }
 
 .frase:hover {
-  color: rgb(99, 18, 175);
+  color: #888;
 }
 
 h2 {
-  color: rgb(28, 202, 202);
+  color: #e1e1e1;
 }
 
-/* Links gerais */
-a {
-  color: #30b55e;
-}
-
-/* Seção de peças recomendadas */
-#pecas ul {
-  list-style: none;
-  padding: 0;
-}
-
-#pecas ul li {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #070c40;
-  border-radius: 5px;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#pecas ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#pecas ul li a {
-  color: #30b55e;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  transition: color 0.3s ease;
-}
-
-#pecas ul li a:hover {
-  color: rgb(9, 255, 9);
-}
-
-/* Seção de dicas */
+#pecas ul,
 #dicas ul {
   list-style: none;
   padding: 0;
 }
 
+#pecas ul li,
 #dicas ul li {
   margin: 10px 0;
   padding: 10px;
-  background-color: #070c40;
+  background-color: #1f1f1f;
   border-radius: 5px;
-  color: #fff;
+  color: #d1d1d1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#pecas ul li:hover,
 #dicas ul li:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#pecas ul li a,
 #dicas ul li a {
-  color: #30b55e;
+  color: #d1d1d1;
   text-decoration: none;
   font-weight: bold;
   display: block;
   transition: color 0.3s ease;
 }
 
+#pecas ul li a:hover,
 #dicas ul li a:hover {
-  color: rgb(9, 255, 9);
+  color: #bce5d581;
 }
 
-/* Rodapé (caso queira usar) */
+/* Footer */
 footer {
   text-align: center;
   padding: 10px 0;
-  background: #2184b6;
-  color: #fff;
+  background: #333333;
+  color: #d1d1d1;
   width: 100%;
+}
+
+/* Seção de Venda de PCs */
+#venda {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#venda h2 {
+  color: #d1d1d1;
+}
+
+.pc-item {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pc-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.pc-item h3 {
+  color: #e1e1e1;
+  margin-top: 10px;
+}
+
+.pc-item p {
+  color: #d1d1d1;
+}
+
+.pc-item .preco {
+  font-size: 1.2em;
+  color: #e54b4b;
+  margin: 10px 0;
+}
+
+.pc-item button {
+  background-color: #555;
+  color: #d1d1d1;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.pc-item button:hover {
+  background-color: #777;
+}
+
+.pc-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de imagem com troca dinâmica */
+#imagem {
+  width: 400px;
+  height: 300px;
+  transition: opacity 1s ease-in-out;
+  margin: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
