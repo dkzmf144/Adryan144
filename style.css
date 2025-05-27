@@ -240,8 +240,8 @@ footer {
 
 /* Seção de imagem com troca dinâmica */
 #imagem {
-  width: 400px;
-  height: 300px;
+  width: 1250px;
+  height: 415px;
   transition: opacity 1s ease-in-out;
   margin: auto;
   display: block;
